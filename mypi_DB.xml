@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bbs category="web"><paragraph><idx>1</idx><title>XML delete node</title><content>Hi I have a question
+
+I have XML structure like this:
+
+
+
+//0
+//1
+//2
+....
+
+
+node names are all the same. How to delete by index?. I tried but bo luck. I want to delete certain , example: delete node 0
+
+
+
+//1
+//2
+....
+
+
+How can I acomplish that?
+
+Thanks.
+
+--------------------------------------------------------------------------------------
+
+IXmlNode.ChildNodes.Delete(Index);</content><hashtag></hashtag></paragraph><paragraph><idx>2</idx><title>델파이에서 XMLDocument 컴포넌트로 XML 읽고 쓰기</title><content>// XML 파일 만들고 쓰기
+procedure TForm1.Button1Click(Sender: TObject);
+Var
+  xdSoft : TXMLDocument;
+  xnRoot  : IXMLNode;
+  xnChild : IXMLNode;
+  xnGrandchild : IXMLNode;
+begin
+
+  // XML Document 만들기
+  xdSoft := TXMLDocument.Create(Application);
+  xdSoft.Active := True;
+  xdSoft.Encoding:= 'euc-kr';
+
+  // 루트 노드 만들기
+  xnRoot := xdSoft.AddChild('SoftList');
+  // 노드에 속성 설정
+  xnRoot.Attributes['LatestUpdate'] := FormatDateTime('YYYY/MM/DD', Now);
+
+
+  // 테스트 데이터 추가
+
+###################################################################### //
+
+  // 노드 밑에 노드 만들기
+  xnChild := xnRoot.AddChild('Soft');
+  xnChild.Attributes['Soft_name'] := 'PhotoSharp';
+
+  xnGrandchild := xnChild.AddChild('Detail');
+  xnGrandchild.Attributes['maker'] := 'Adove';
+  xnGrandchild.Attributes['section']  := 'Drawing tool';
+  xnGrandchild.Attributes['Price']  := 5000;
+
+  xnGrandchild := xnChild.AddChild('Extra');
+  xnGrandchild.Attributes['name'] := 'toy';
+  xnGrandchild.Attributes['note']  := 'for child';
+
+  xnGrandchild := xnChild.AddChild('Stock');
+  // 노드 값 설정
+  xnGrandchild.NodeValue := 100;
+
+  // ---------------------------------------------------------------------- //
+
+  xnChild := xnRoot.AddChild('Soft');
+  xnChild.Attributes['Soft_name'] := 'OverOffice';
+
+  xnGrandchild := xnChild.AddChild('Detail');
+  xnGrandchild.Attributes['maker'] := 'OverSoft';
+  xnGrandchild.Attributes['section']  := 'office tool';
+  xnGrandchild.Attributes['Price']  := 2000;
+
+  xnGrandchild := xnChild.AddChild('Extra');
+  xnGrandchild.Attributes['name'] := 'notebook';
+  xnGrandchild.Attributes['note']  := 'no comment';
+
+  xnGrandchild := xnChild.AddChild('Stock');
+  xnGrandchild.NodeValue := 50;
+
+  // ###################################################################### //
+
+  // XML Document 저장하기
+  xdSoft.SaveToFile('C:\Test.Xml');
+  xdSoft.Free;
+
+end;</content><hashtag></hashtag></paragraph></Bbs>
