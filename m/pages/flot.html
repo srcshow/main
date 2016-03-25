@@ -35,27 +35,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="./images/shCore.js"></script>
-    <script type="text/javascript" src="./images/shLegacy.js"></script>
-    <script type="text/javascript" src="./images/shBrushBash.js"></script>
-    <script type="text/javascript" src="./images/shBrushCpp.js"></script>
-    <script type="text/javascript" src="./images/shBrushCSharp.js"></script>
-    <script type="text/javascript" src="./images/shBrushCss.js"></script>
-    <script type="text/javascript" src="./images/shBrushDelphi.js"></script>
-    <script type="text/javascript" src="./images/shBrushDiff.js"></script>
-    <script type="text/javascript" src="./images/shBrushGroovy.js"></script>
-    <script type="text/javascript" src="./images/shBrushJava.js"></script>
-    <script type="text/javascript" src="./images/shBrushJScript.js"></script>
-    <script type="text/javascript" src="./images/shBrushPhp.js"></script>
-    <script type="text/javascript" src="./images/shBrushPlain.js"></script>
-    <script type="text/javascript" src="./images/shBrushPython.js"></script>
-    <script type="text/javascript" src="./images/shBrushRuby.js"></script>
-    <script type="text/javascript" src="./images/shBrushScala.js"></script>
-    <script type="text/javascript" src="./images/shBrushSql.js"></script>
-    <script type="text/javascript" src="./images/shBrushVb.js"></script>
-    <script type="text/javascript" src="./images/shBrushXml.js"></script>
-    <link type="text/css" rel="stylesheet" href="./images/shCore.css">
-    <link type="text/css" rel="stylesheet" href="./images/shThemeDefault.css">
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css">
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css">
     <script type="text/javascript">
     SyntaxHighlighter.all();
     </script>
@@ -400,140 +400,261 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Flot</h1>
-                    <textarea name="code" class="brush:cpp;">
-                    void main
-                    {
-                       cout << "test"
-                    }
-                    </textarea>
+                    <textarea name="code" class="brush:pas;">
+                      unit Main;
+
+                      interface
+
+                      uses
+                        Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+                        Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls,  XMLDoc, XMLIntf;
+
+                      type
+                        TFrm_webdic = class(TForm)
+                          page_search: TPageControl;
+                          sheet_search: TTabSheet;
+                          sheet_write: TTabSheet;
+                          cbx_filter: TComboBox;
+                          edt_word: TEdit;
+                          btn_search: TButton;
+                          list_file: TListBox;
+                          mem_content: TMemo;
+                          edt_title: TEdit;
+                          mem_write: TMemo;
+                          btn_write: TButton;
+                          Label1: TLabel;
+                          Label2: TLabel;
+                          Label3: TLabel;
+                          edt_writetag: TEdit;
+                          edt_tag: TEdit;
+                          procedure FormResize(Sender: TObject);
+                          procedure btn_writeClick(Sender: TObject);
+                          procedure FormCreate(Sender: TObject);
+                          procedure list_fileClick(Sender: TObject);
+                          procedure list_fileKeyDown(Sender: TObject; var Key: Word;
+                            Shift: TShiftState);
+                          procedure page_searchChange(Sender: TObject);
+                        private
+                          { Private declarations }
+                        public
+                          { Public declarations }
+                          procedure refreshNode();
+                        end;
+
+                      var
+                        Frm_webdic: TFrm_webdic;
+
+                      implementation
+
+                      {$R *.dfm}
+
+                      //내용 작성하기.
+                      procedure TFrm_webdic.btn_writeClick(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnRoot  : IXMLNode;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        nodeCnt : Integer;
+                      begin
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                          xdSoft.Active := True;
+                          xnRoot := xdSoft.ChildNodes.FindNode('Bbs');
+                        end else
+                        begin
+                         // XML Document 만들기
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.Active := True;
+                          xdSoft.Encoding:= 'utf-8';
+                          // 루트 노드 만들기
+                          xnRoot := xdSoft.AddChild('Bbs');
+                          // 노드에 속성 설정
+                          xnRoot.Attributes['category'] := 'web';
+                        end;
+
+                        if (xnRoot.ChildNodes.Count = 0) or (IntToStr(xnRoot.ChildNodes.Count) = '') then
+                        begin
+                          nodeCnt := 0;
+                        end else
+                        begin
+                          nodeCnt := xnRoot.ChildNodes.Count;
+                        end;
+
+
+
+                        // 노드 밑에 노드 만들기
+                        xnChild := xnRoot.AddChild('paragraph');
+
+                        xnGrandchild := xnChild.AddChild('idx');
+
+                        xnGrandchild.NodeValue := IntToStr(nodeCnt+1);
+
+                        xnGrandchild := xnChild.AddChild('title');
+
+                        xnGrandchild.NodeValue := edt_title.Text;
+
+                        xnGrandchild := xnChild.AddChild('content');
+
+                        xnGrandchild.NodeValue := mem_write.Text;
+
+                        xnGrandchild := xnChild.AddChild('hashtag');
+
+                        xnGrandchild.NodeValue := edt_writetag.Text;
+
+                        // XML Document 저장하기
+                        xdSoft.SaveToFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Free;
+
+                        //새로 읽기.
+                        refreshNode;
+                      end;
+
+                      //폼 생성시 파일이 있으면 읽어들인다.
+                      procedure TFrm_webdic.FormCreate(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          refreshNode;
+                        end;
+
+                      end;
+
+                      //폼 리사이즈시에
+                      procedure TFrm_webdic.FormResize(Sender: TObject);
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+                      end;
+
+                      //내용 상세보기
+                      procedure TFrm_webdic.list_fileClick(Sender: TObject);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        mem_content.Clear;
+
+                        bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                          begin
+                            mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                          end;
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      //글삭제
+                      procedure TFrm_webdic.list_fileKeyDown(Sender: TObject; var Key: Word;
+                        Shift: TShiftState);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        if key = VK_DELETE then
+                        begin
+                          mem_content.Clear;
+                          if MessageDlg('선택하신 글을 삭제하시겠습니까?', mtInformation,mbOkCancel, 0) = 1 then
+                          begin
+                            bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+                            // XML Document 만들기
+                            xdSoft := TXMLDocument.Create(Application);
+                            // XML Document 불러오기
+                            xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                            xdSoft.Active := True;
+
+                            // 루트에 딸려있는 노드 분
+                            For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                            Begin
+                              xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                              if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                              begin
+                                //xnChild.ChildNodes.Delete(i);
+                                xdSoft.ChildNodes.Delete(i)
+                              end;
+                            End;
+                            xdSoft.Free;
+                          end;
+                        end;
+                        //다시새로 읽어들인다.
+                        refreshNode;
+
+                      end;
+
+                      procedure TFrm_webdic.page_searchChange(Sender: TObject);
+                      begin
+                        refreshNode;
+                      end;
+
+                      procedure TFrm_webdic.refreshNode;
+                      var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        list_file.Clear;
+                        mem_content.Clear;
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트 노드가 없을 경우 종료
+                        if xdSoft.ChildNodes.First = nil then
+                        Begin
+                          Exit;
+                        End;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          list_file.Items.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[0].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      end.
+
+                  </textarea>
+
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart"></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Pie Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-pie-chart"></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Multiple Axes Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart-multi"></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Moving Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart-moving"></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bar Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-bar-chart"></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Flot Charts Usage
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <p>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website, <a target="_blank" href="http://www.flotcharts.org/">http://www.flotcharts.org/</a>.</p>
-                            <a target="_blank" class="btn btn-default btn-lg btn-block" href="http://www.flotcharts.org/">View Flot Charts Documentation</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    <!-- Flot Charts JavaScript -->
-    <script src="../bower_components/flot/excanvas.min.js"></script>
-    <script src="../bower_components/flot/jquery.flot.js"></script>
-    <script src="../bower_components/flot/jquery.flot.pie.js"></script>
-    <script src="../bower_components/flot/jquery.flot.resize.js"></script>
-    <script src="../bower_components/flot/jquery.flot.time.js"></script>
-    <script src="../bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../js/flot-data.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
