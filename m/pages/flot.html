@@ -35,10 +35,33 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/javascript" src="./images/shCore.js"></script>
+    <script type="text/javascript" src="./images/shLegacy.js"></script>
+    <script type="text/javascript" src="./images/shBrushBash.js"></script>
+    <script type="text/javascript" src="./images/shBrushCpp.js"></script>
+    <script type="text/javascript" src="./images/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="./images/shBrushCss.js"></script>
+    <script type="text/javascript" src="./images/shBrushDelphi.js"></script>
+    <script type="text/javascript" src="./images/shBrushDiff.js"></script>
+    <script type="text/javascript" src="./images/shBrushGroovy.js"></script>
+    <script type="text/javascript" src="./images/shBrushJava.js"></script>
+    <script type="text/javascript" src="./images/shBrushJScript.js"></script>
+    <script type="text/javascript" src="./images/shBrushPhp.js"></script>
+    <script type="text/javascript" src="./images/shBrushPlain.js"></script>
+    <script type="text/javascript" src="./images/shBrushPython.js"></script>
+    <script type="text/javascript" src="./images/shBrushRuby.js"></script>
+    <script type="text/javascript" src="./images/shBrushScala.js"></script>
+    <script type="text/javascript" src="./images/shBrushSql.js"></script>
+    <script type="text/javascript" src="./images/shBrushVb.js"></script>
+    <script type="text/javascript" src="./images/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="./images/shCore.css">
+    <link type="text/css" rel="stylesheet" href="./images/shThemeDefault.css">
+    <script type="text/javascript">
+    SyntaxHighlighter.all();
+    </script>
 </head>
 
-<body>
+<body Onload="dp.SyntaxHighlighter.HighlightAll('code');">
 
     <div id="wrapper">
 
@@ -377,6 +400,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Flot</h1>
+                    <textarea name="code" class="brush:cpp;">
+                    void main
+                    {
+                       cout << "test"
+                    }
+                    </textarea>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
