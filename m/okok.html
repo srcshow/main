@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      function saveText() {
+        var txtsrc = document.all["ta"].value;
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        fso.CreateTextFile("c:\\test.html",true);
+        var newFileObject = fso.GetFile("c:\\test.html");
+        var text = newFileObject.OpenAsTextStream(2,0);
+        text.Write(txtsrc);
+        text.Close();
+      }
+    </script>
+  </head>
+  <body>
+    <textarea name="ta" id="ta" cols=50 rows=10></textarea>
+    <br><input type=button value=save onclick="saveText();">
+  </body>
+</html>
