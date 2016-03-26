@@ -22,6 +22,11 @@
 	  $("table.sieve").sieve();
 	  //$('#contents').load('flot.html');
 	}); 
+
+	function changePage(val)
+	{
+		$('#contents').load(val);
+	}
   </script>
 <style type="text/css">
 	div#s_left { 
@@ -73,9 +78,23 @@
 			<tr>
 				<td>여행</td>
 			</tr>
+			<tr>
+				<td height="auto" style="word-break:break-all;"><a href="#" onclick="javascript:changePage(test.html);">api테스트</a></td>
+			</tr>
 		   </tbody>
 		  </table>	
 	</div>
+
+<!--
+template copy
+
+			<tr>
+				<td height="auto" style="word-break:break-all;"><a href="#" onclick="javascript:changePage(소스파일명);">api검색제목</a></td>
+			</tr>
+
+
+-->
+
 	<div id="contents">
 
 	</div>
