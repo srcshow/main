@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>api</title>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css">
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css">
+    <script type="text/javascript">
+    SyntaxHighlighter.all();
+    </script>
+</head>
+
+<body Onload="dp.SyntaxHighlighter.HighlightAll('code');">
+					<!-- 소스종류, 설명 등을 작성. -->
+                    <h1 class="page-header">Delphi</h1>
+					<!-- textarea 영역에 소스를 그대로 붙여넣고 brush만 선택해준다. 
+
+Brush name			Brush aliases			File name
+ActionScript3		as3, actionscript3		shBrushAS3.js
+Bash/shell			bash, shell				shBrushBash.js
+ColdFusion			cf, coldfusion			shBrushColdFusion.js
+C#					c-sharp, csharp			shBrushCSharp.js
+C++					cpp, c					shBrushCpp.js
+CSS					css						shBrushCss.js
+Delphi				delphi, pas, pascal		shBrushDelphi.js
+Diff				diff, patch				shBrushDiff.js
+Erlang				erl, erlang				shBrushErlang.js
+Groovy				groovy					shBrushGroovy.js
+JavaScript			js, jscript, javascript	shBrushJScript.js
+Java				java					shBrushJava.js
+JavaFX				jfx, javafx				shBrushJavaFX.js
+Perl				perl, pl				shBrushPerl.js
+PHP					php						shBrushPhp.js
+Plain				Text	plain, text		shBrushPlain.js
+PowerShell			ps, powershell			shBrushPowerShell.js
+Python				py, python				shBrushPython.js
+Ruby				rails, ror, ruby		shBrushRuby.js
+Scala				scala					shBrushScala.js
+SQL					sql						shBrushSql.js
+Visual Basic		vb, vbnet				shBrushVb.js
+XML					xml, xhtml, xslt, html	shBrushXml.js					
+					
+					
+					
+					-->
+                    <textarea name="code" class="brush:pas;">
+                      unit Main; 
+
+                      interface
+
+                      uses
+                        Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+                        Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls,  XMLDoc, XMLIntf;
+
+                      type
+                        TFrm_webdic = class(TForm)
+                          page_search: TPageControl;
+                          sheet_search: TTabSheet;
+                          sheet_write: TTabSheet;
+                          cbx_filter: TComboBox;
+                          edt_word: TEdit;
+                          btn_search: TButton;
+                          list_file: TListBox;
+                          mem_content: TMemo;
+                          edt_title: TEdit;
+                          mem_write: TMemo;
+                          btn_write: TButton;
+                          Label1: TLabel;
+                          Label2: TLabel;
+                          Label3: TLabel;
+                          edt_writetag: TEdit;
+                          edt_tag: TEdit;
+                          procedure FormResize(Sender: TObject);
+                          procedure btn_writeClick(Sender: TObject);
+                          procedure FormCreate(Sender: TObject);
+                          procedure list_fileClick(Sender: TObject);
+                          procedure list_fileKeyDown(Sender: TObject; var Key: Word;
+                            Shift: TShiftState);
+                          procedure page_searchChange(Sender: TObject);
+                        private
+                          { Private declarations }
+                        public
+                          { Public declarations }
+                          procedure refreshNode();
+                        end;
+
+                      var
+                        Frm_webdic: TFrm_webdic;
+
+                      implementation
+
+                      {$R *.dfm}
+
+                      //내용 작성하기.
+                      procedure TFrm_webdic.btn_writeClick(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnRoot  : IXMLNode;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        nodeCnt : Integer;
+                      begin
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                          xdSoft.Active := True;
+                          xnRoot := xdSoft.ChildNodes.FindNode('Bbs');
+                        end else
+                        begin
+                         // XML Document 만들기
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.Active := True;
+                          xdSoft.Encoding:= 'utf-8';
+                          // 루트 노드 만들기
+                          xnRoot := xdSoft.AddChild('Bbs');
+                          // 노드에 속성 설정
+                          xnRoot.Attributes['category'] := 'web';
+                        end;
+
+                        if (xnRoot.ChildNodes.Count = 0) or (IntToStr(xnRoot.ChildNodes.Count) = '') then
+                        begin
+                          nodeCnt := 0;
+                        end else
+                        begin
+                          nodeCnt := xnRoot.ChildNodes.Count;
+                        end;
+
+
+
+                        // 노드 밑에 노드 만들기
+                        xnChild := xnRoot.AddChild('paragraph');
+
+                        xnGrandchild := xnChild.AddChild('idx');
+
+                        xnGrandchild.NodeValue := IntToStr(nodeCnt+1);
+
+                        xnGrandchild := xnChild.AddChild('title');
+
+                        xnGrandchild.NodeValue := edt_title.Text;
+
+                        xnGrandchild := xnChild.AddChild('content');
+
+                        xnGrandchild.NodeValue := mem_write.Text;
+
+                        xnGrandchild := xnChild.AddChild('hashtag');
+
+                        xnGrandchild.NodeValue := edt_writetag.Text;
+
+                        // XML Document 저장하기
+                        xdSoft.SaveToFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Free;
+
+                        //새로 읽기.
+                        refreshNode;
+                      end;
+
+                      //폼 생성시 파일이 있으면 읽어들인다.
+                      procedure TFrm_webdic.FormCreate(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          refreshNode;
+                        end;
+
+                      end;
+
+                      //폼 리사이즈시에
+                      procedure TFrm_webdic.FormResize(Sender: TObject);
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+                      end;
+
+                      //내용 상세보기
+                      procedure TFrm_webdic.list_fileClick(Sender: TObject);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        mem_content.Clear;
+
+                        bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                          begin
+                            mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                          end;
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      //글삭제
+                      procedure TFrm_webdic.list_fileKeyDown(Sender: TObject; var Key: Word;
+                        Shift: TShiftState);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        if key = VK_DELETE then
+                        begin
+                          mem_content.Clear;
+                          if MessageDlg('선택하신 글을 삭제하시겠습니까?', mtInformation,mbOkCancel, 0) = 1 then
+                          begin
+                            bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+                            // XML Document 만들기
+                            xdSoft := TXMLDocument.Create(Application);
+                            // XML Document 불러오기
+                            xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                            xdSoft.Active := True;
+
+                            // 루트에 딸려있는 노드 분
+                            For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                            Begin
+                              xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                              if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                              begin
+                                //xnChild.ChildNodes.Delete(i);
+                                xdSoft.ChildNodes.Delete(i)
+                              end;
+                            End;
+                            xdSoft.Free;
+                          end;
+                        end;
+                        //다시새로 읽어들인다.
+                        refreshNode;
+
+                      end;
+
+                      procedure TFrm_webdic.page_searchChange(Sender: TObject);
+                      begin
+                        refreshNode;
+                      end;
+
+                      procedure TFrm_webdic.refreshNode;
+                      var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        list_file.Clear;
+                        mem_content.Clear;
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트 노드가 없을 경우 종료
+                        if xdSoft.ChildNodes.First = nil then
+                        Begin
+                          Exit;
+                        End;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          list_file.Items.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[0].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      end.
+
+                  </textarea>
+
+
+</body>
+
+</html>
