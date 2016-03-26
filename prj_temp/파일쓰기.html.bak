@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script>
+      function saveText() {
+        var txtsrc = document.all["ta"].value;
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        fso.CreateTextFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt1.html",true);
+        var newFileObject = fso.GetFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt1.html");
+        var text = newFileObject.OpenAsTextStream(2,0);
+        text.Write(txtsrc);
+        text.Close();
+      }
+
+	      function fnRun() {
+         var objWSH = new ActiveXObject("WScript.Shell"); 
+         var retval = objWSH.Run("%SystemRoot%\\System32\\notepad.exe");
+     }
+
+    </script>
+  </head>
+  <body>
+    <textarea name="ta" cols=50 rows=10></textarea>
+    <br><input type=button value=save onclick="saveText();">
+
+	
+
+<input type="button"  value="execute" onclick="fnRun()" />
+
+  </body>
+</html>
