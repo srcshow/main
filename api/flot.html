@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"></script>
+    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css">
+    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css">
+    <script type="text/javascript">
+    SyntaxHighlighter.all();
+    </script>
+</head>
+
+<body Onload="dp.SyntaxHighlighter.HighlightAll('code');">
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Panels and Wells</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html"> Icons</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Grid</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Page</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Flot</h1>
+                    <textarea name="code" class="brush:pas;">
+                      unit Main;
+
+                      interface
+
+                      uses
+                        Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+                        Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls,  XMLDoc, XMLIntf;
+
+                      type
+                        TFrm_webdic = class(TForm)
+                          page_search: TPageControl;
+                          sheet_search: TTabSheet;
+                          sheet_write: TTabSheet;
+                          cbx_filter: TComboBox;
+                          edt_word: TEdit;
+                          btn_search: TButton;
+                          list_file: TListBox;
+                          mem_content: TMemo;
+                          edt_title: TEdit;
+                          mem_write: TMemo;
+                          btn_write: TButton;
+                          Label1: TLabel;
+                          Label2: TLabel;
+                          Label3: TLabel;
+                          edt_writetag: TEdit;
+                          edt_tag: TEdit;
+                          procedure FormResize(Sender: TObject);
+                          procedure btn_writeClick(Sender: TObject);
+                          procedure FormCreate(Sender: TObject);
+                          procedure list_fileClick(Sender: TObject);
+                          procedure list_fileKeyDown(Sender: TObject; var Key: Word;
+                            Shift: TShiftState);
+                          procedure page_searchChange(Sender: TObject);
+                        private
+                          { Private declarations }
+                        public
+                          { Public declarations }
+                          procedure refreshNode();
+                        end;
+
+                      var
+                        Frm_webdic: TFrm_webdic;
+
+                      implementation
+
+                      {$R *.dfm}
+
+                      //내용 작성하기.
+                      procedure TFrm_webdic.btn_writeClick(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnRoot  : IXMLNode;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        nodeCnt : Integer;
+                      begin
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                          xdSoft.Active := True;
+                          xnRoot := xdSoft.ChildNodes.FindNode('Bbs');
+                        end else
+                        begin
+                         // XML Document 만들기
+                          xdSoft := TXMLDocument.Create(Application);
+                          xdSoft.Active := True;
+                          xdSoft.Encoding:= 'utf-8';
+                          // 루트 노드 만들기
+                          xnRoot := xdSoft.AddChild('Bbs');
+                          // 노드에 속성 설정
+                          xnRoot.Attributes['category'] := 'web';
+                        end;
+
+                        if (xnRoot.ChildNodes.Count = 0) or (IntToStr(xnRoot.ChildNodes.Count) = '') then
+                        begin
+                          nodeCnt := 0;
+                        end else
+                        begin
+                          nodeCnt := xnRoot.ChildNodes.Count;
+                        end;
+
+
+
+                        // 노드 밑에 노드 만들기
+                        xnChild := xnRoot.AddChild('paragraph');
+
+                        xnGrandchild := xnChild.AddChild('idx');
+
+                        xnGrandchild.NodeValue := IntToStr(nodeCnt+1);
+
+                        xnGrandchild := xnChild.AddChild('title');
+
+                        xnGrandchild.NodeValue := edt_title.Text;
+
+                        xnGrandchild := xnChild.AddChild('content');
+
+                        xnGrandchild.NodeValue := mem_write.Text;
+
+                        xnGrandchild := xnChild.AddChild('hashtag');
+
+                        xnGrandchild.NodeValue := edt_writetag.Text;
+
+                        // XML Document 저장하기
+                        xdSoft.SaveToFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Free;
+
+                        //새로 읽기.
+                        refreshNode;
+                      end;
+
+                      //폼 생성시 파일이 있으면 읽어들인다.
+                      procedure TFrm_webdic.FormCreate(Sender: TObject);
+                      Var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+
+                        if FileExists(ExtractFilePath(application.ExeName)+'mypi_DB.xml') then
+                        begin
+                          refreshNode;
+                        end;
+
+                      end;
+
+                      //폼 리사이즈시에
+                      procedure TFrm_webdic.FormResize(Sender: TObject);
+                      begin
+                        Frm_webdic.Width := 739;
+                        Frm_webdic.Height:= 609;
+                      end;
+
+                      //내용 상세보기
+                      procedure TFrm_webdic.list_fileClick(Sender: TObject);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        mem_content.Clear;
+
+                        bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                          begin
+                            mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                          end;
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      //글삭제
+                      procedure TFrm_webdic.list_fileKeyDown(Sender: TObject; var Key: Word;
+                        Shift: TShiftState);
+                      var
+                        bbs_title : String;
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        if key = VK_DELETE then
+                        begin
+                          mem_content.Clear;
+                          if MessageDlg('선택하신 글을 삭제하시겠습니까?', mtInformation,mbOkCancel, 0) = 1 then
+                          begin
+                            bbs_title := list_file.Items.Strings[list_file.ItemIndex];
+                            // XML Document 만들기
+                            xdSoft := TXMLDocument.Create(Application);
+                            // XML Document 불러오기
+                            xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                            xdSoft.Active := True;
+
+                            // 루트에 딸려있는 노드 분
+                            For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                            Begin
+                              xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                              if bbs_title = xnChild.ChildNodes[1].NodeValue then
+                              begin
+                                //xnChild.ChildNodes.Delete(i);
+                                xdSoft.ChildNodes.Delete(i)
+                              end;
+                            End;
+                            xdSoft.Free;
+                          end;
+                        end;
+                        //다시새로 읽어들인다.
+                        refreshNode;
+
+                      end;
+
+                      procedure TFrm_webdic.page_searchChange(Sender: TObject);
+                      begin
+                        refreshNode;
+                      end;
+
+                      procedure TFrm_webdic.refreshNode;
+                      var
+                        xdSoft : TXMLDocument;
+                        xnChild : IXMLNode;
+                        xnGrandchild : IXMLNode;
+                        i : Integer;
+                      begin
+                        list_file.Clear;
+                        mem_content.Clear;
+
+                        // XML Document 만들기
+                        xdSoft := TXMLDocument.Create(Application);
+                        // XML Document 불러오기
+                        xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
+                        xdSoft.Active := True;
+
+                        // 루트 노드가 없을 경우 종료
+                        if xdSoft.ChildNodes.First = nil then
+                        Begin
+                          Exit;
+                        End;
+
+                        // 루트에 딸려있는 노드 분
+                        For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
+                        Begin
+                          xnChild := xdSoft.DocumentElement.ChildNodes[i];
+                          list_file.Items.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[0].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[1].NodeValue);
+                          //mem_content.Lines.Add(xnChild.ChildNodes[2].NodeValue);
+                        End;
+                        xdSoft.Free;
+                      end;
+
+                      end.
+
+                  </textarea>
+
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+</body>
+
+</html>
