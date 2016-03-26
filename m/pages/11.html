@@ -1,75 +1,41 @@
-<Html>
-<head>
-<title> ::File I/O </title>
-</head>
-
-<body>
-<script type="text/javascript">
-var path = window.location.pathname;
-//var g_AbsoluteUrl = document.URL.substring(document.domain.length + 12, document.URL.lastIndexOf("/") + 1);
-alert(path);
-//파일 만드는 함수--------------------------------------------------
-function createFile()
-{
-  //text area에 기록된 text를 txt에 저장
-  var txt= document.getElementById("txtInput").value;
-
-  // FileSystemObject 객체를 생성
-  var fileObject = new ActiveXObject("Scripting.FileSystemObject");
-  // 파일 생성(이스케이프(\)를 두번씩 넣어줘야 함.)
-  fWrite = fileObject.CreateTextFile("/main/m/pages/write.txt",true);
-  // 파일쓰기
-  fWrite.write(txt+"</body></html>");
-  // 파일 닫기
-  fWrite.close();
-
-  document.getElementById("txtInput").innerHTML="저장되었습니다.show File 버튼을 누르면 확인할 수 있습니다.";
-}
-
-//파일 읽어와서 보여주는 함수--------------------------------------------------
-function showFile()
-{
- var fileName = "/main/m/pages/write.txt";
- var fileObject=new ActiveXObject("Scripting.FileSystemObject");
-
- //파일이 있는지 검사
-
- if (!fileObject.FileExists(fileName)) //파일이 없다면
- {
-  alert('만들어진 파일이 없습니다. 파일을 만드신 후 다시 이용하세요');
- }
- else //파일이 있다면..
- {
-  var fOpen=fileObject.OpenTextFile(fileName,1);
-  document.getElementById("txtOutput").innerHTML="";
-
-  //파일 읽어오기
-  while(!fOpen.AtEndOfStream)
-  {
-   document.getElementById("txtOutput").innerHTML+= fOpen.Readline();
-  }
-  fOpen.close();
- }
-}
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://srcshow.github.io/main/javascripts/jquery.sieve.min.js"></script>
+<script >
+$(document).ready(function() {
+  $("table.sieve").sieve();
+});
 </script>
+ </head>
+ <body>
 
-
-
-<textarea id="txtInput" name="text" rows="6" cols="40">
-이곳에 글을 입력하세요.
-</textarea>
-<br><br>
-
-
-
-<input type="button" value="Create File" onclick="createFile()">
-<input type="button" value="show File" onclick="showFile()">
-
-<br><br>
-
-
-<textarea id="txtOutput" name="text" rows="6" cols="40">
-저장된 글을 보기 위한 곳입니다.
-</textarea>
-</body>
+  <table class="sieve">
+  <tbody>
+	<tr>
+		<td>검색1</td>
+	</tr>
+	<tr>
+		<td>강대우</td>
+	</tr>
+	<tr>
+		<td>써치</td>
+	</tr>
+	<tr>
+		<td>ㅋㅋ</td>
+	</tr>
+	<tr>
+		<td>집</td>
+	</tr>
+	</tbody>
+  </table>
+ </body>
 </html>
