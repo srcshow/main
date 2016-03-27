@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="UTF-8">
  <head>
   <meta charset="UTF-8">
@@ -15,6 +16,7 @@
 		var posts;
 
 		pres = ' <!doctype html> '+"\n";
+		//pres = pres + ' <!-- saved from url=(0013)about:internet --> ';
 		pres = pres + ' <html lang="euc-kr"> '+"\n";
 		pres = pres + '  <head> '+"\n";
 		pres = pres + '   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" /> '+'<'+'/script'+'>'+"\n";+"\n";
@@ -50,11 +52,11 @@
 		//pres = pres + '   <body Onload="dp.SyntaxHighlighter.HighlightAll("code");"> '+"\n";
 		pres = pres + '		<h1 class="page-header">Description</h1> '+"\n";
 		pres = pres + '			<textarea name="code" class="brush:pas;"> '+"\n";
-		pres = pres + ' <pre> '+"\n";
+		//pres = pres + ' <pre> '+"\n";
 
         var txtsrc = document.all["ta"].value;
 		
-		posts = ' </pre> '+"\n";
+		//posts = ' </pre> '+"\n";
 		posts = posts + ' </textarea> '+"\n";
 		posts = posts + '   </body> '+"\n";
 		posts = posts + ' </html>  '+"\n";
