@@ -1,71 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="../css/timeline.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"></script>
-    <script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"></script>
-    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css">
-    <link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css">
-    <script type="text/javascript">
-    SyntaxHighlighter.all();
-    </script>
-</head>
-
-<body Onload="dp.SyntaxHighlighter.HighlightAll('code');">
-
-                    <h1 class="page-header">Flot</h1>
-                    <textarea name="code" class="brush:pas;">
-                      unit Main;
+ <!doctype html> <br> <html lang="euc-kr"> <br>  <head> <br>   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" /> <br>   <title>api writer</title> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"/> <br>		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"/> <br>		<link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css"/> <br>		<link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css"/> <br>		<script type="text/javascript"> <br>			SyntaxHighlighter.all(); <br>		</script><br>  </head> <br><br>   <body Onload="dp.SyntaxHighlighter.HighlightAll('code');"> <br>		<h1 class="page-header">Description</h1> <br>			<textarea name="code" class="brush:pas;"> <br> <pre> <br>                      unit Main;
 
                       interface
 
@@ -112,7 +45,7 @@
 
                       {$R *.dfm}
 
-                      //ë‚´ìš© ì‘ì„±í•˜ê¸°.
+                      //³»¿ë ÀÛ¼ºÇÏ±â.
                       procedure TFrm_webdic.btn_writeClick(Sender: TObject);
                       Var
                         xdSoft : TXMLDocument;
@@ -129,13 +62,13 @@
                           xnRoot := xdSoft.ChildNodes.FindNode('Bbs');
                         end else
                         begin
-                         // XML Document ë§Œë“¤ê¸°
+                         // XML Document ¸¸µé±â
                           xdSoft := TXMLDocument.Create(Application);
                           xdSoft.Active := True;
                           xdSoft.Encoding:= 'utf-8';
-                          // ë£¨íŠ¸ ë…¸ë“œ ë§Œë“¤ê¸°
+                          // ·çÆ® ³ëµå ¸¸µé±â
                           xnRoot := xdSoft.AddChild('Bbs');
-                          // ë…¸ë“œì— ì†ì„± ì„¤ì •
+                          // ³ëµå¿¡ ¼Ó¼º ¼³Á¤
                           xnRoot.Attributes['category'] := 'web';
                         end;
 
@@ -149,7 +82,7 @@
 
 
 
-                        // ë…¸ë“œ ë°‘ì— ë…¸ë“œ ë§Œë“¤ê¸°
+                        // ³ëµå ¹Ø¿¡ ³ëµå ¸¸µé±â
                         xnChild := xnRoot.AddChild('paragraph');
 
                         xnGrandchild := xnChild.AddChild('idx');
@@ -168,15 +101,15 @@
 
                         xnGrandchild.NodeValue := edt_writetag.Text;
 
-                        // XML Document ì €ì¥í•˜ê¸°
+                        // XML Document ÀúÀåÇÏ±â
                         xdSoft.SaveToFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
                         xdSoft.Free;
 
-                        //ìƒˆë¡œ ì½ê¸°.
+                        //»õ·Î ÀĞ±â.
                         refreshNode;
                       end;
 
-                      //í¼ ìƒì„±ì‹œ íŒŒì¼ì´ ìˆìœ¼ë©´ ì½ì–´ë“¤ì¸ë‹¤.
+                      //Æû »ı¼º½Ã ÆÄÀÏÀÌ ÀÖÀ¸¸é ÀĞ¾îµéÀÎ´Ù.
                       procedure TFrm_webdic.FormCreate(Sender: TObject);
                       Var
                         xdSoft : TXMLDocument;
@@ -194,14 +127,14 @@
 
                       end;
 
-                      //í¼ ë¦¬ì‚¬ì´ì¦ˆì‹œì—
+                      //Æû ¸®»çÀÌÁî½Ã¿¡
                       procedure TFrm_webdic.FormResize(Sender: TObject);
                       begin
                         Frm_webdic.Width := 739;
                         Frm_webdic.Height:= 609;
                       end;
 
-                      //ë‚´ìš© ìƒì„¸ë³´ê¸°
+                      //³»¿ë »ó¼¼º¸±â
                       procedure TFrm_webdic.list_fileClick(Sender: TObject);
                       var
                         bbs_title : String;
@@ -214,13 +147,13 @@
 
                         bbs_title := list_file.Items.Strings[list_file.ItemIndex];
 
-                        // XML Document ë§Œë“¤ê¸°
+                        // XML Document ¸¸µé±â
                         xdSoft := TXMLDocument.Create(Application);
-                        // XML Document ë¶ˆëŸ¬ì˜¤ê¸°
+                        // XML Document ºÒ·¯¿À±â
                         xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
                         xdSoft.Active := True;
 
-                        // ë£¨íŠ¸ì— ë”¸ë ¤ìˆëŠ” ë…¸ë“œ ë¶„
+                        // ·çÆ®¿¡ µş·ÁÀÖ´Â ³ëµå ºĞ
                         For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
                         Begin
                           xnChild := xdSoft.DocumentElement.ChildNodes[i];
@@ -232,7 +165,7 @@
                         xdSoft.Free;
                       end;
 
-                      //ê¸€ì‚­ì œ
+                      //±Û»èÁ¦
                       procedure TFrm_webdic.list_fileKeyDown(Sender: TObject; var Key: Word;
                         Shift: TShiftState);
                       var
@@ -245,16 +178,16 @@
                         if key = VK_DELETE then
                         begin
                           mem_content.Clear;
-                          if MessageDlg('ì„ íƒí•˜ì‹  ê¸€ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?', mtInformation,mbOkCancel, 0) = 1 then
+                          if MessageDlg('¼±ÅÃÇÏ½Å ±ÛÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?', mtInformation,mbOkCancel, 0) = 1 then
                           begin
                             bbs_title := list_file.Items.Strings[list_file.ItemIndex];
-                            // XML Document ë§Œë“¤ê¸°
+                            // XML Document ¸¸µé±â
                             xdSoft := TXMLDocument.Create(Application);
-                            // XML Document ë¶ˆëŸ¬ì˜¤ê¸°
+                            // XML Document ºÒ·¯¿À±â
                             xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
                             xdSoft.Active := True;
 
-                            // ë£¨íŠ¸ì— ë”¸ë ¤ìˆëŠ” ë…¸ë“œ ë¶„
+                            // ·çÆ®¿¡ µş·ÁÀÖ´Â ³ëµå ºĞ
                             For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
                             Begin
                               xnChild := xdSoft.DocumentElement.ChildNodes[i];
@@ -267,7 +200,7 @@
                             xdSoft.Free;
                           end;
                         end;
-                        //ë‹¤ì‹œìƒˆë¡œ ì½ì–´ë“¤ì¸ë‹¤.
+                        //´Ù½Ã»õ·Î ÀĞ¾îµéÀÎ´Ù.
                         refreshNode;
 
                       end;
@@ -287,19 +220,19 @@
                         list_file.Clear;
                         mem_content.Clear;
 
-                        // XML Document ë§Œë“¤ê¸°
+                        // XML Document ¸¸µé±â
                         xdSoft := TXMLDocument.Create(Application);
-                        // XML Document ë¶ˆëŸ¬ì˜¤ê¸°
+                        // XML Document ºÒ·¯¿À±â
                         xdSoft.LoadFromFile(ExtractFilePath(application.ExeName)+'mypi_DB.xml');
                         xdSoft.Active := True;
 
-                        // ë£¨íŠ¸ ë…¸ë“œê°€ ì—†ì„ ê²½ìš° ì¢…ë£Œ
+                        // ·çÆ® ³ëµå°¡ ¾øÀ» °æ¿ì Á¾·á
                         if xdSoft.ChildNodes.First = nil then
                         Begin
                           Exit;
                         End;
 
-                        // ë£¨íŠ¸ì— ë”¸ë ¤ìˆëŠ” ë…¸ë“œ ë¶„
+                        // ·çÆ®¿¡ µş·ÁÀÖ´Â ³ëµå ºĞ
                         For i := 0 To xdSoft.DocumentElement.ChildNodes.count - 1 Do
                         Begin
                           xnChild := xdSoft.DocumentElement.ChildNodes[i];
@@ -313,9 +246,12 @@
 
                       end.
 
-                  </textarea>
 
 
-</body>
 
-</html>
+
+
+
+
+
+ </pre> <br> </textarea> <br>   </body> <br> </html>  <br>

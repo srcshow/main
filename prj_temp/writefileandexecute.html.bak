@@ -1,30 +1,119 @@
-<html>
-  <head>
+<!doctype html>
+<html lang="UTF-8">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>api writer</title>
+ </head>
     <script>
-      function saveText() {
+      function saveText() 
+	  {
+		var pres;
+		var posts;
+
+		pres = ' <!doctype html> '+"\n";
+		pres = pres + ' <html lang="euc-kr"> '+"\n";
+		pres = pres + '  <head> '+"\n";
+		pres = pres + '   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" /> '+'<'+'/script'+'>'+"\n";+"\n";
+		pres = pres + '   <title>api writer</title> '+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shCore.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shLegacy.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushBash.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCpp.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCSharp.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushCss.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDelphi.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushDiff.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushGroovy.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJava.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushJScript.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPhp.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPlain.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushPython.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushRuby.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushScala.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushSql.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushVb.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript" src="http://srcshow.github.io/main/m/pages/scripts/shBrushXml.js"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shCore.css"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<link type="text/css" rel="stylesheet" href="http://srcshow.github.io/main/m/pages/styles/shThemeDefault.css"/> '+'<'+'/script'+'>'+"\n";
+		pres = pres + '		<script type="text/javascript"> '+"\n";
+		pres = pres + '			SyntaxHighlighter.all(); '+"\n";
+		pres = pres + '		<'+'/script'+'>'+"\n";
+		pres = pres + '  </head> '+"\n";
+		pres = pres + ' <body Onload="dp.SyntaxHighlighter.HighlightAll(';
+		pres = pres + "'code');";
+		pres = pres + '"> '+"\n";
+		//pres = pres + '   <body Onload="dp.SyntaxHighlighter.HighlightAll("code");"> '+"\n";
+		pres = pres + '		<h1 class="page-header">Description</h1> '+"\n";
+		pres = pres + '			<textarea name="code" class="brush:pas;"> '+"\n";
+		pres = pres + ' <pre> '+"\n";
+
         var txtsrc = document.all["ta"].value;
+		
+		posts = ' </pre> '+"\n";
+		posts = posts + ' </textarea> '+"\n";
+		posts = posts + '   </body> '+"\n";
+		posts = posts + ' </html>  '+"\n";
+		//posts = posts + '  ';
+
+		
+
+		
+
+
+		//반드시 익스플로러에서만 실행한다.
         var fso = new ActiveXObject("Scripting.FileSystemObject");
-        fso.CreateTextFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt1.html",true);
-        var newFileObject = fso.GetFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt1.html");
+
+		//아래 경로에 현재 실행중인 pc의 경로를 입력한다. 권한문제로 appData/local/virtualstore에 들어가는 일이 없도록 바탕화면에 따로 폴더를 만들어서 지정한다.
+        fso.CreateTextFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt12.html",true);
+		
+		//파일오브젝트를 생성한다.
+        var newFileObject = fso.GetFile("C:\\Users\\DaeWoo\\Desktop\\main\\tt12.html");
         var text = newFileObject.OpenAsTextStream(2,0);
-        text.Write(txtsrc);
+        text.Write(pres+txtsrc+posts);
         text.Close();
+		alert("작성완료");
       }
 
-	      function fnRun() {
+	  
+	  function fnRun() 
+	  {
+		 //마찬가지로 익스플로러에서 실행한다. 
          var objWSH = new ActiveXObject("WScript.Shell"); 
-         var retval = objWSH.Run("%SystemRoot%\\System32\\notepad.exe");
-     }
+		 
+		 //자동커밋 배치파일실행
+         var retval = objWSH.Run("C:\\Users\\DaeWoo\\Desktop\\AutoCommit.bat");
+
+		 //커밋완료
+		 alert(" Auto Commit ")
+
+      }
 
     </script>
   </head>
   <body>
-    <textarea name="ta" cols=50 rows=10></textarea>
-    <br><input type=button value=save onclick="saveText();">
 
-	
 
-<input type="button"  value="execute" onclick="fnRun()" />
+
+  <!-- 실제 내용 작성 영역 -->
+    <textarea name="ta" wrap="hard" style="width:100%;height:500px;border:1;overflow:visible;text-overflow:ellipsis;">
+
+
+
+
+
+</textarea>
+
+
+
+
+    
+	<br><input type="button" value="저장" onclick="saveText();">
+	<input type="button"  value="커밋" onclick="fnRun()" />
 
   </body>
 </html>
