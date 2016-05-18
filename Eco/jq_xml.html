@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title> NewDocument </title>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<!-- <script type="text/javascript" src="XMLLoader.js"></script> -->
+<script>
+    var _xml;
+    var _arrTarget = [];
+    var _arrLink = [];
+    var _arrDesc = [];
+	var XMLLoader = {}
+		XMLLoader.init = init;
+		 
+		XMLLoader.xmlLoad = xmlLoad;
+		XMLLoader.complete = null;
+		XMLLoader.error = null;
+		XMLLoader.url = "";
+		XMLLoader.type = "xml";
+	 
+		/****************************************************************
+		 * init
+		 ****************************************************************/
+		function init() 
+		{
+			xmlLoad();
+		};
+	 
+		/****************************************************************
+		 * load
+		 ****************************************************************/
+		function xmlLoad() 
+		{
+			//alert("load");
+			jQuery.ajax({ 
+					 
+				type:"GET", 
+				dataType:XMLLoader.type,
+				url:XMLLoader.url, 
+				success: function(data){
+					XMLLoader.complete(data);
+				},
+				complete: function() {
+					//alert("complete");
+				},
+				error: function(xhr, status) {
+					XMLLoader.error(xhr, status)
+				}
+			});
+		}
+
+</script>
+
+
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            init();
+        });
+  
+        function init()
+        {
+        jQuery.ajax({
+        dataType:"xml",
+                    url:"http://openapi.seoul.go.kr:8088/776344466238396b373544524b7955/xml/SebcPharmacyInfoKor/1/550/",
+        success:function(data){
+            load(data);
+			//console.log(data);
+        },
+        complete:function(){
+            //alert("complete");
+        },
+        error:function(xhr,status){
+            console.log(xhr, status);
+        }
+        });
+        }
+  
+        function load($xml)
+        {
+			//대표노드
+            _xml = $($xml).find("SebcPharmacyInfoKor");
+			
+			//반복 row의 length
+            var len = _xml.find("row").length;
+            for(var i=0; i<len; ++i)
+            {
+                _arrTarget[i] = _xml.find("row").eq(i).find("NAME_KOR").text();
+                _arrLink[i] = _xml.find("row").eq(i).find("ADD_KOR_ROAD").text();
+                _arrDesc[i] = _xml.find("row").eq(i).find("TEL").text();
+                $("body").append(i).append(_arrTarget[i]).append(_arrLink[i]).append(_arrDesc[i]).append("<br />");
+                  
+            }
+        }
+    </script>
+</body>
+</html>
