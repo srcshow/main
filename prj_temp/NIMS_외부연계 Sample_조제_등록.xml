@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 조제 등록 -->
+<pmm_regist xmlns="http://www.nims.go.kr/schema/nims"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.nims.go.kr/schema/nims nims.xsd">
+	<entrps_cntc_no></entrps_cntc_no><!-- 업체연계번호 -->
+	<reporter_info><!-- 보고자 정보 -->
+		<entrps_nm>사랑약국</entrps_nm><!-- 보고자 업체명 -->
+		<bizrno>1234567890</bizrno><!-- 보고자 사업자등록번호 -->
+		<bssh_seq_no></bssh_seq_no><!-- 보고자 업소일련번호 -->
+		<hptl_no></hptl_no><!-- 요양기관번호 -->
+		<usr_id>userID00</usr_id><!-- 보고자 아이디 -->
+		<usr_nm>황진이</usr_nm><!-- 보고자 이름 -->
+	</reporter_info>
+	<patnt_info><!-- 환자 정보 -->
+		<patnt_nm>이몽룡</patnt_nm><!-- 환자명 -->
+		<frgnr_at>N</frgnr_at><!-- 외국인여부 -->
+		<patnt_idnum>9010230000000</patnt_idnum><!-- 주민등록번호 -->
+		<fgnrno></fgnrno><!-- 외국인등록번호 -->
+		<psprnbr></psprnbr><!-- 여권번호 -->
+	</patnt_info>
+	<diss_info><!-- 질병 정보 -->
+		<diss_cd>A1000</diss_cd><!-- 질병코드 -->
+	</diss_info>
+	<prscer_info><!-- 처방자 정보 -->
+		<entrps_nm>희망병원</entrps_nm><!-- 처방 의료기관명 -->
+		<bizrno>1234567890</bizrno><!-- 사업자등록번호 -->
+		<bssh_seq_no></bssh_seq_no><!-- 업소일련번호 -->
+		<hptl_no></hptl_no><!-- 요양기관번호 -->
+		<prscer_nm>허준</prscer_nm><!-- 처방자명 -->
+		<lcns_no>000000</lcns_no><!-- 면허번호 -->
+		<prsc_dt>20160415</prsc_dt><!-- 처방일자 -->
+	</prscer_info>
+	<prmdc_info><!-- 조제 정보 -->
+		<prmdc_dt>20160415</prmdc_dt><!-- 조제/투약일자 -->
+		<dosage_info><!-- 복용 정보 -->
+			<dosage_detail_count>2</dosage_detail_count><!-- 복용상세 개수 -->
+			<dosage_detail><!-- 복용 상세 -->
+				<mdctn_pd>3</mdctn_pd><!-- 복용기간 -->
+				<day_mdctn_co>3</day_mdctn_co><!-- 일복용횟수 -->
+				<once_mdctn_info><!-- 일회복용량 정보 -->
+					<once_mdctn>1</once_mdctn><!-- 일회복용량 -->
+					<once_mdctn>0.5</once_mdctn>
+					<once_mdctn>1</once_mdctn>
+				</once_mdctn_info>
+				<sgtin_info><!-- SGTIN 정보 -->
+					<sgtin_count>2</sgtin_count><!-- SGTIN 개수 -->
+					<sgtin_detail><!-- SGTIN 상세 -->
+						<sgtin>0108806469001037211000000705891717051810FEB1400</sgtin><!-- SGTIN -->
+						<sgtin_mdcnt_qy>5</sgtin_mdcnt_qy><!-- 조제/투약수량 -->
+						<dsuse_trget>N</dsuse_trget><!-- 잔여폐기대상 -->
+					</sgtin_detail>
+					<sgtin_detail>
+						<sgtin>0108806469001037211000000705901717051810FEB1400</sgtin>
+						<sgtin_mdcnt_qy>2.5</sgtin_mdcnt_qy>
+						<dsuse_trget>Y</dsuse_trget>
+					</sgtin_detail>
+				</sgtin_info>
+			</dosage_detail>
+			<dosage_detail>
+				<mdctn_pd>3</mdctn_pd>
+				<day_mdctn_co>3</day_mdctn_co>
+				<once_mdctn_info>
+					<once_mdctn>1</once_mdctn>
+				</once_mdctn_info>
+				<sgtin_info>
+					<sgtin_count>1</sgtin_count>
+					<sgtin_detail>
+						<sgtin>303619817C05FA40EA88002B</sgtin>
+						<sgtin_mdcnt_qy>9</sgtin_mdcnt_qy>
+						<dsuse_trget>N</dsuse_trget>
+					</sgtin_detail>
+				</sgtin_info>
+			</dosage_detail>
+		</dosage_info>
+	</prmdc_info>
+</pmm_regist>
